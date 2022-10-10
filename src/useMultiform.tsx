@@ -15,7 +15,11 @@ const useMultiform = (steps: ReactElement[]) => {
     currentStepIndex,
     step: steps[currentStepIndex],
     goTo,
-
+    next,
+    back,
+    steps,
+    isFirstStep: currentStepIndex === 0,
+    isLastStep: currentStepIndex === steps.length - 1
   }
 }
 
